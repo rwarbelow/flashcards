@@ -11,6 +11,8 @@ class Round
 
   def start
     puts "Welcome! You're playing with #{deck.count} cards."
+    puts "-------------------------------------------------"
+    puts "Here is your first question:"
     @deck.cards.each do |card|
       response = get_response(card)
       answer   = record_answer(response, card)
